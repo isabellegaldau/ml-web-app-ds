@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obesity Prediction</title>
+</head>
+<body>
+    <h2>Enter the values</h2>
+    
+    <form action="/" method="post">
+        Age: <input type="number" step="any" name="age" required><br><br>
+        Gender: <select name="gender" required>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select><br><br>
+        Height: <input type="number" step="any" name="height" required><br><br>
+        Weight: <input type="number" step="any" name="weight" required><br><br>
+        FCVC: <input type="number" step="any" name="fcvc" required><br><br>
+        NCP: <input type="number" step="any" name="ncp" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    
+    {% if prediction != None %}
+        <h3>Prediction: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
