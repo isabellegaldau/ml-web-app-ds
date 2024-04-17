@@ -1,7 +1,4 @@
-from utils import db_connect
-engine = db_connect()
 
-# your code here
 from flask import Flask, request, render_template
 import pickle
 
