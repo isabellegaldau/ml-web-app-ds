@@ -40,5 +40,4 @@ def index():
     
     return render_template("index.html", prediction=pred_class)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+
